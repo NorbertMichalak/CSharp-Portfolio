@@ -116,7 +116,7 @@ static void ShowMenu()
     Console.WriteLine("4. Update score");
     Console.WriteLine("5. Exit");
     Console.WriteLine("6. Show average.");
-    Console.WriteLine("7. Show hightest score.");
+    Console.WriteLine("7. Show highest score.");
     Console.WriteLine("8. Show lowest score.");
     Console.Write("\nYour choice: ");
 }
@@ -162,7 +162,7 @@ static void ShowAverage(List<int> scores)
 {   
     if (scores.Count == 0)
     {
-        Console.WriteLine("No scores to calclulate average.");
+        Console.WriteLine("No scores to calculate average.");
         return;
     }
     int sum = 0;
@@ -187,14 +187,14 @@ static void ShowMaxScore(List<int> scores)
         return;
     }
 
-    int MaxScore = scores[0];
+    int maxScore = scores[0];
 
     foreach (int score in scores)
     {
-        if (score > MaxScore) MaxScore = score;
+        if (score > maxScore) maxScore = score;
     }
 
-    Console.WriteLine($"Highest score: {MaxScore}");
+    Console.WriteLine($"Highest score: {maxScore}");
 }
 
 static void ShowMinScore(List<int> scores)
@@ -205,12 +205,12 @@ static void ShowMinScore(List<int> scores)
         return;
     }
 
-    int MinScore = scores[0];
+    int minScore = scores[0];
 
     foreach (int score in scores)
     {
-        if (score < MinScore) MinScore = score;
+        if (score < minScore) minScore = score;
     }
 
-    Console.WriteLine($"Lowest score: {MinScore}");
+    Console.WriteLine($"Lowest score: {minScore}");
 }
