@@ -1,0 +1,23 @@
+[
+  {
+    "Title": "Alien",
+    "Genre": 5,
+    "ReleaseYear": 1979,
+    "Price": 4.99,
+    "IsRented": false
+  },
+  {
+    "Title": "Dumb and Dumber",
+    "Genre": 2,
+    "ReleaseYear": 1994,
+    "Price": 5.99,
+    "IsRented": false
+  },
+  {
+    "Title": "Truman Show",
+    "Genre": 3,
+    "ReleaseYear": 1998,
+    "Price": 5.49,
+    "IsRented": false
+  }
+]
