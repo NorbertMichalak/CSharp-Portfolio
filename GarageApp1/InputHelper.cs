@@ -1,0 +1,46 @@
+using System.Globalization;
+namespace GarageApp;
+
+    // === Input validation ===
+class InputHelper
+{
+    public static string ReadNonEmpty(string prompt)
+    {
+        while(true)
+        {
+            Console.Write(prompt);
+            string? s = Console.ReadLine();
+            if (!string.IsNullOrWhiteSpace(s))
+                return s.Trim();
+            Console.WriteLine("Can't be empty.");
+        }
+    }
+
+    public static int ReadInt(string prompt, int min, int max)
+    {
+        while(true)
+        {
+            Console.Write(prompt);
+            if (int.TryParse(Console.ReadLine(), out int value) && value >= min && value <= max)
+            return value;
+            Console.WriteLine($"Enter a number within a range {min}-{max}");
+        }
+    }
+
+    public static decimal ReadDecimal (string prompt, decimal min, decimal max)
+    {
+        while(true)
+        {
+            Console.Write(prompt);
+            string input = Console.ReadLine()?.Replace(',','.') ?? "";
+
+            if(decimal.TryParse(input, NumberStyles.Number, CultureInfo.InvariantCulture, out decimal value)
+            && value >= min && value <= max)
+            {
+                return value;
+            }
+
+            Console.WriteLine($"Enter a number within a range {min}-{max}");
+        }
+    }
+}
