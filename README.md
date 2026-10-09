@@ -52,3 +52,8 @@ OOP concepts: inheritance, interfaces (IFuel, IkWh), polymorphism, JsonDerivedTy
 Upgrade from JSON to SQLite via Entity Framework Core.
 TPH (Table-Per-Hierarchy) with discriminator column for polymorphic persistence.
 **Tech:** C#, EF Core, SQLite
+
+### GarageApp 3.0 — Vehicle Cost Calculator API
+RESTful API for managing a car garage and calculating vehicle running costs.
+Features: full CRUD, polymorphism with EF Core discriminator, cost calculation per 100km, cheapest vehicle finder, input validation, Swagger UI, async/await with error handling.
+**Tech:** ASP.NET Core Web API, EF Core, SQLite, Swagger
