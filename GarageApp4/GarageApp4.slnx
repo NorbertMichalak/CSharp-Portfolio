@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="GarageApp4.csproj" />
+  <Project Path="GarageApp4.Tests/GarageApp4.Tests.csproj" />
+</Solution>
